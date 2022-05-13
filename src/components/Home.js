@@ -41,8 +41,8 @@ const Home = () => {
         Authorization: `token ${token}`,
       },
       body: JSON.stringify({
-          serial: 415,
-        bankName: "saman",
+          serial: serial,
+        bankName: bankName,
       }),
     })
       .then((res) => res.json())
