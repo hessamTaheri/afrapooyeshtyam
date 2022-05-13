@@ -40,10 +40,10 @@ const Home = () => {
       headers: { 'Content-Type' : 'application/json',
         Authorization: `token ${token}`,
       },
-      body: {
+      body: JSON.stringify({
           serial: 415,
         bankName: "saman",
-      },
+      }),
     })
       .then((res) => res.json())
       .then((json) => console.log(json));
